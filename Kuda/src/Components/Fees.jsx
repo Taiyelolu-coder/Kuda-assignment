@@ -75,9 +75,10 @@ const TextBox = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-/* align-items: center; */
-line-height: 2ch;
+align-items: start;
+gap: 30px;
 text-align: start;
+width: auto;
 @media (max-width: 800px){
     text-align: center;
 }
@@ -85,6 +86,7 @@ h1{
     font-size:33px;
     font-weight: 800;
     color:#40196d;
+    line-height: 2ch;
     @media (max-width: 800px){
         font-size: 27px;
     }

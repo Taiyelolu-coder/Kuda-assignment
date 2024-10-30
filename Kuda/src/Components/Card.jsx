@@ -24,10 +24,11 @@ box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 padding:10px;
 @media (max-width: 800px){
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* width: 900px; */
+    /* width: fit-content; */
     height: 50px;
 }
 

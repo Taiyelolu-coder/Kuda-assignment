@@ -75,7 +75,8 @@ margin-bottom:100px;
    align-items: center;
    /* justify-content:center; */
    text-align: center;
-   width: 350px;
+   /* width: 350px; */
+   gap: 20px;
    margin:auto;
 }
 h1{
@@ -83,6 +84,7 @@ h1{
     font-size: 35px;
     width: 500px;
     font-weight: 800;
+    line-height: 2ch;
     @media (max-width: 800px) {
       font-size: 28px;
       width: 500px;

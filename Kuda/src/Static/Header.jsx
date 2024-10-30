@@ -1,14 +1,23 @@
-
+import Hamburger from "./Hamburger";
 import styled from "styled-components"
 import { TiArrowSortedDown } from "react-icons/ti";
 import LogoImg from "../assets/kuda.png"
 import FlagImg from "../assets/Nigeria_Flag.jpg"
 import { IoReorderTwoOutline } from "react-icons/io5";
-
-
+import {Link} from "react-router-dom"
+import {useState} from "react"
+import React from "react"
 
 const Header = ()=> {
 
+
+  const [toggle, setToggle] = useState(false)
+
+  const handleToggle = () => {
+      setToggle(!toggle)
+  }
+
+  // console.log(toggle);
   return (
       <Container>
         <LogoNav>
@@ -16,22 +25,29 @@ const Header = ()=> {
             <img src={LogoImg} alt="" />
           </Logo>
           <Navigations>
+            <Link to="/Personal">
             <nav>
               <span>Personal</span>
               <TiArrowSortedDown size={20}/>
             </nav>
+            </Link>
+            <Link to="/Business">
             <nav>
               <span>Business</span>
               <TiArrowSortedDown size={20}/>
-            </nav>
+            </nav></Link>
+            <Link to="/Company">
             <nav>
               <span>Company</span>
               <TiArrowSortedDown size={20}/>
             </nav>
+            </Link>
+            <Link to="/Help">
             <nav>
               <span>Help</span>
               <TiArrowSortedDown size={20}/>
             </nav>
+            </Link>
           </Navigations>
         </LogoNav>
 
@@ -41,10 +57,11 @@ const Header = ()=> {
           <Flag>
             <img src={FlagImg} alt="" />
           </Flag>
-          <SideNav>
+          <SideNav onClick={handleToggle}>
           <IoReorderTwoOutline />
           </SideNav>
         </Buttons>
+        {toggle === false ? null : <Hamburger toggle ={toggle} setToggle={setToggle}/>}
       </Container>
   )
 }
