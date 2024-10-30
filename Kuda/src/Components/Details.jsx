@@ -32,8 +32,8 @@ const ImageBox = styled.div`
 width: 50%;
 margin-right: 100px;
 @media (max-width: 800px){
-    width: 500px;
-    margin-right: 100px;
+    /* width: 500px; */
+    /* margin-right: 100px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@ margin-right: 100px;
 img{
     @media (max-width: 800px){
         width: 500px;
-        margin-right: 100px;
+        margin-left: 100px;
     }
 }
 `
@@ -87,7 +87,7 @@ const Wrapper = styled.div`
 display: flex;
 justify-content: space-between;
 max-width: 85%;
-gap: 100px;
+gap: 10px;
 /* border: 1px solid black; */
 padding: 0px 10px;
 @media (max-width: 800px) {

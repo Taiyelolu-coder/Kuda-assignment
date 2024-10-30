@@ -13,9 +13,10 @@
     font-family: "Montserrat";
   }
   
-  *{
+  /* *{
     box-sizing: border-box;
-  }
+    margin: auto;
+  } */
   
   body {
     margin: 0;

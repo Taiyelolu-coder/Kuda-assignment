@@ -66,7 +66,10 @@ const Hamburger =({toggle, setToggle})=>{
 export default Hamburger
 
 const Container = styled.div`
-/* display:none; */`
+min-height: calc(100vh - 80px);
+display: flex;
+
+`
 const LogoNav = styled.div`
 img{
     width: 80px;

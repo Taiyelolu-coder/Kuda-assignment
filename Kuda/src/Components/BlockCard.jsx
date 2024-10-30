@@ -39,12 +39,14 @@ padding: 0px 10px;
 const ImageBox = styled.div`
 width: 50%;
 @media (max-width: 800px){
-        width: 500px;
+        /* width: 500px; */
         align-items: center;
+        margin-right:120px;
     }
 
     img{
-        width: 470px;
+        width: 500px;
+        
     }
 `
 
